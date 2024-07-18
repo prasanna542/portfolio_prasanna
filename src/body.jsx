@@ -107,7 +107,7 @@ function Body() {
               <p className="font-semibold">{experience.domain}</p>
             </div>
             <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white font-semibold py-2 px-4 md-py-10 md-px-10 md-mx-10 rounded-full hover:bg-blue-700"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white font-semibold py-2 px-4 md:py-10 md:px-10 md:mx-10 rounded-full hover:bg-blue-700"
               onClick={() => handleMoreInfoClick(index)}
             >
               <FontAwesomeIcon icon={faArrowRight} />
@@ -125,13 +125,12 @@ function Body() {
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">Projects</h2>
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
-            <img src="/images/healthyHeartImage.jpeg" alt="Projects" className="object-contain w-1/3   h-auto max-w-sm rounded-lg shadow-lg" />
+            <img src="/images/healthyHeartImage.jpeg" alt="Projects" className="object-contain w-full h-auto max-w-sm rounded-lg shadow-lg" />
           </div>
-          <div className="md:w-2/2 flex flex-col justify-center">
+          <div className="md:w-2/3 flex flex-col justify-center">
             <ul className="list-disc list-inside text-xl md:text-2xl">
-              <li><b>Heart Disease Detection System</b> | (Android-Studio, Java, ML,GitHub, Ubidots-cloud)</li>
-              <li><b>Personal Cloud </b>| (Python, Harddrive, SQL-Lite, GitHub)</li>
-            
+              <li><b>Heart Disease Detection System</b> | (Android-Studio, Java, ML, GitHub, Ubidots-cloud)</li>
+              <li><b>Personal Cloud</b> | (Python, Harddrive, SQLite, GitHub)</li>
             </ul>
           </div>
         </div>
